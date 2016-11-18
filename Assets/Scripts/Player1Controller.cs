@@ -5,7 +5,7 @@ public class Player1Controller : MonoBehaviour {
 	Animator anim;
 	Rigidbody2D rigi;
 	public float fuerza = 1;
-	public float fsalto = 10f;
+	public float fsalto = 100;
 	public bool tocando_suelo = false;
 	private GameControlScript gcs;
 
