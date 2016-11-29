@@ -4,6 +4,7 @@ using System.Collections;
 public class Player1Controller : MonoBehaviour {
 	Animator anim;
 	Rigidbody2D rigi;
+	public GameObject particulas_muerte;
 	public float fuerza = 1;
 	public float fsalto = 100;
 	public bool tocando_suelo = false;
@@ -69,7 +70,8 @@ public class Player1Controller : MonoBehaviour {
 
 	void OnCollisionEnter2D(Collision2D col){
 		if (col.gameObject.tag == "muerte") {
-			gcs.respaw ();
+			//gcs.respaw ();
+			Instantiate(particulas_muerte, transform.position, transform.rotation);
 		}
 	}
 }

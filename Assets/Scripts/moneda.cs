@@ -8,8 +8,8 @@ private Rigidbody2D rb;
 	// Use this for initialization
 	void Start () {
 		//Random.Range (0,10);
-		rb = GetComponent<Rigidbody2D> ();
-		rb.AddForce (new Vector2 (Random.Range(-200,200), 200));
+		//rb = GetComponent<Rigidbody2D> ();
+		//rb.AddForce (new Vector2 (Random.Range(-200,200), 200));
 		texto_moneda = GameObject.Find ("Text_mon");
 		cm = texto_moneda.GetComponent<control_text_monedas> ();
 	}
